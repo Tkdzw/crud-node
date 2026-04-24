@@ -27,11 +27,17 @@ function send(res, status, contentType, body) {
 }
 
 async function serveStylesheet(reqUrl, res) {
-  if (reqUrl.pathname !== "/styles.css") return false;
+  if (reqUrl.pathname !== "/styles.css" && reqUrl.pathname !== "/KTBlog.png") return false;
 
   try {
-    const css = await readFile(path.join(PUBLIC_DIR, "styles.css"), "utf8");
-    send(res, 200, "text/css; charset=utf-8", css);
+    if (reqUrl.pathname === "/styles.css") {
+      const css = await readFile(path.join(PUBLIC_DIR, "styles.css"), "utf8");
+      send(res, 200, "text/css; charset=utf-8", css);
+      return true;
+    }
+
+    const logo = await readFile(path.join(PUBLIC_DIR, "KTBlog.png"));
+    send(res, 200, "image/png", logo);
   } catch {
     send(res, 404, "text/plain; charset=utf-8", "Not found");
   }

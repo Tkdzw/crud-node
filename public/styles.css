@@ -89,15 +89,11 @@ img {
   font-size: 12px;
 }
 
-.brand-mark {
-  display: grid;
-  place-items: center;
+.brand-logo {
   width: 42px;
   height: 42px;
   border-radius: 14px;
-  background: linear-gradient(135deg, var(--brand), var(--accent));
-  color: white;
-  font-weight: 800;
+  object-fit: cover;
   box-shadow: var(--shadow);
 }
 
