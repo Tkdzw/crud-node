@@ -495,8 +495,7 @@ function renderFeed(posts, filters) {
   <a class="button secondary" href="/feed">Clear filters</a>
 </article>`;
 
-  const body = `${renderHero(filters, posts.length)}
-<section class="feed-layout">
+  const body = `<section class="feed-layout">
   <div class="feed-main">
     ${featured || emptyState}
     <section class="feed-list">
