@@ -366,12 +366,63 @@ img {
   font-weight: 700;
 }
 
+.share-link {
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.share-link:hover {
+  color: var(--text);
+}
+
 .meta-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
   margin-top: 16px;
+}
+
+.post-link-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.platform-share-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.share-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0 16px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text);
+  font-weight: 700;
+}
+
+.share-button:hover {
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.share-button.whatsapp {
+  border-color: rgba(37, 211, 102, 0.4);
+  background: rgba(37, 211, 102, 0.12);
+}
+
+.share-button.linkedin {
+  border-color: rgba(10, 102, 194, 0.4);
+  background: rgba(10, 102, 194, 0.14);
 }
 
 .quick-links {
@@ -546,6 +597,27 @@ img {
   margin: 18px 0 8px;
 }
 
+.post-share-row {
+  margin: 10px 0 6px;
+}
+
+.post-share-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin: 18px 0 8px;
+  padding: 18px 20px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.post-share-panel p {
+  margin: 4px 0 0;
+  color: var(--muted);
+}
+
 .related-section {
   padding-bottom: 56px;
 }
@@ -587,6 +659,9 @@ img {
   .header-inner,
   .card-footer,
   .meta-row,
+  .post-link-actions,
+  .platform-share-links,
+  .post-share-panel,
   .feed-actions,
   .footer-inner,
   .search-row {
