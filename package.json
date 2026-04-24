@@ -1,18 +1,10 @@
 {
-  "name": "node-supabase-crud",
-  "version": "1.0.0",
-  "description": "Node.js CRUD API with Supabase",
-  "main": "server.js",
+  "name": "kuber-tech-blog",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A lightweight tech blog for Kuber.co.zw built with plain Node.js.",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
-  },
-  "dependencies": {
-    "@supabase/supabase-js": "^2.39.0",
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2"
-  },
-  "devDependencies": {
-    "nodemon": "^3.0.1"
+    "dev": "node server.js",
+    "start": "node server.js"
   }
 }
