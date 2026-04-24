@@ -9,7 +9,7 @@ const SITE = {
   name: "Kuber Tech Blog",
   shortName: "Kuber Technologies",
   domain: "kuber.co.zw",
-  baseUrl: process.env.SITE_URL || `http://localhost:${PORT}`,
+  baseUrl: process.env.SITE_URL || `http://blog.kuber.co.zw`,
   description: "Practical insights on websites, hosting, email, cloud tools, and digital growth for Zimbabwean businesses.",
   tagline: "Build smarter online systems for growing businesses.",
   heroKicker: "Kuber Technologies Insights",
